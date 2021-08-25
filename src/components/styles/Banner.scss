@@ -2,16 +2,25 @@
 @import "./helpers/mixins";
 .Banner {
   $border-color: #635f5f;
-position: relative;
-z-index: 2;
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-text-align: center;
-height: 80%;
-width: 68%;
-padding: 1rem 3rem;
-border: 5px double #9d835b7d;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 80%;
+  width: 68%;
+  padding: 1rem 3rem;
+  border: 10px double #9d835b7d;
+  
+    background-image: url("../../images/paper-texture.png");
+    background-repeat: repeat;
+    opacity: 0.75;
+
+  @media screen and (min-width: $screen-width-lg) {
+    padding: 1rem;
+    width: 80%;
+  }
 
   &__header,
   &__date,
@@ -20,17 +29,16 @@ border: 5px double #9d835b7d;
     font-family: $font-family-body;
     letter-spacing: 5px;
     font-weight: 500;
-
   }
-  
+
   &__header,
   &__date {
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 32px;
   }
 
   &__location {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   &__logoContainer {
@@ -38,15 +46,58 @@ border: 5px double #9d835b7d;
     max-width: 700px;
     margin: 0 auto;
   }
-  
-  &__btn{
-  @include siteBtn();
-  background-color: transparent;
-  
-  
-  // max-width: 600px;
-  margin: 0 auto;
- border-bottom: 2px #635f5f double;
-  // border-bottom: 3px solid gold;
+
+  &__btn {
+    @include siteBtn();
+    width: 100px;
+    // background-color: transparent;
+    // background: transparent;
+
+    margin: 0 auto;
+    // font-size: 18px;
+    //  border-bottom: 2px #635f5f double;
+
+    //  background: linear-gradient(to right, #BF953F1F, #FCF6BA69, #B387283D, #FBF5B782, #AA771C2B);
+
+    background-color: #c1bfbf;
+    // background-image: linear-gradient(to right, #BF953F5C, #FCF6BA, #B3872861, #FBF5B7, #AA771C6E);
+
+    background-image: linear-gradient(
+      312deg,
+      #bf953f5c,
+      #fcf6ba,
+      #b3872861,
+      #fbf5b7,
+      #aa771c6e
+    );
+
+    box-shadow: 0 0 1px 0px #545454;
+    opacity: 0.87;
+    
+    
+    
+
+    &:hover {
+      //  background-color: rgba(#635f5f, 0.7);
+
+      //  background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+
+      //  background: linear-gradient(to right, #BF953F5C, #FCF6BA, #B3872861, #FBF5B7, #AA771C6E);
+
+      background-color: #c1bfbf;
+
+      background-image: linear-gradient(
+        325deg,
+        #bf953f5c,
+        #fcf6ba,
+        #b3872861,
+        #fbf5b7,
+        #aa771c6e
+      );
+
+      box-shadow: 0 0 3px 0px #545454;
+
+      opacity: 1;
+    }
   }
 }

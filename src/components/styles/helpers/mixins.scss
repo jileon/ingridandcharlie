@@ -30,7 +30,7 @@
 @mixin siteBtn{
  $Button--defaultHeight: 55px !default;
 
-  @include fluid-type(320px, $screen-width-lg, 14px, 18px);
+  @include fluid-type(320px, $screen-width-lg, 16px, 18px);
 
   display: inline-flex;
   align-items: center;
@@ -45,7 +45,7 @@
   text-decoration: none;
       border: none;
   transition: 200ms ease;
-  transition-property: box-shadow, color, background-color;
+  transition-property: box-shadow, color, background-color, background,opacity;
   min-height: $Button--defaultHeight;
   height: $Button--defaultHeight;
   max-width: 100%;
