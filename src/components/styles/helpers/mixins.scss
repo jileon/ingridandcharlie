@@ -1,0 +1,52 @@
+@import "./variables";
+
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1==$u2 and $u1==$u3 and $u1==$u4 {
+    & {
+      font-size: $min-font-size;
+
+      @each $name, $width in $container-max-widths {
+        // @media screen and (min-width: $width) and (min-height: $width * 0.65) {
+        @media screen and (min-width: $width) {
+          font-size: $min-font-size +
+            strip-unit($max-font-size - $min-font-size) *
+            (strip-unit($width / $screen-width-xl));
+        }
+      }
+    }
+  }
+}
+
+@mixin siteBtn{
+ $Button--defaultHeight: 55px !default;
+
+  @include fluid-type(320px, $screen-width-lg, 14px, 18px);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  font-family: $font-family-body;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+      border: none;
+  transition: 200ms ease;
+  transition-property: box-shadow, color, background-color;
+  min-height: $Button--defaultHeight;
+  height: $Button--defaultHeight;
+  max-width: 100%;
+}

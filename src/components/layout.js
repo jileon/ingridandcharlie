@@ -27,8 +27,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <div style={{ margin: `0 auto`,}}>
-        <main>{children}</main>
-        <footer
+        <main>{children}
+        </main>
+        {/* <footer
           style={{
             marginTop: `2rem`,
           }}
@@ -36,9 +37,9 @@ const Layout = ({ children }) => {
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
-        
-          
-        </footer>
+
+
+        </footer> */}
       </div>
     </>
   )

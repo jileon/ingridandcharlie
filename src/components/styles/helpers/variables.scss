@@ -12,12 +12,12 @@ $color-text: $color-black;
 // --------------------------
 //
 // HEADINGS SIZES
-$font-size-h1: 54px;
-$font-size-h2: 48px;
-$font-size-h3: 40px;
-$font-size-h4: 36px;
-$font-size-h5: 28px;
-$font-size-h6: 24px;
+// $font-size-h1: 54px;
+// $font-size-h2: 48px;
+// $font-size-h3: 40px;
+// $font-size-h4: 36px;
+// $font-size-h5: 28px;
+// $font-size-h6: 24px;
 //
 // FONT SIZES
 $font-size-body-lg: 24px;
@@ -70,3 +70,10 @@ $screen-width-md: 992px;
 $screen-width-lg: 1200px;
 $screen-width-xl: 1402px;
 
+
+$container-max-widths: (
+  sm: $screen-width-sm,
+  md: $screen-width-md,
+  lg: $screen-width-lg,
+  xl: $screen-width-xl,
+);

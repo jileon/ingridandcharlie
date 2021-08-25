@@ -76,7 +76,6 @@ function Seo({ description, lang, meta, title }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet" />
         <script src="//embed.typeform.com/next/embed.js"></script>
-
       </Helmet>
 
     </div>

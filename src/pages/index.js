@@ -3,20 +3,35 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
+import OneColumn from "../components/onecolumn"
+
 import Seo from "../components/seo"
-
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Ingrid and Charlie" />
-    <h1>Page Title</h1>
-  
-
-    <button data-tf-slider="UwkqWUIr" data-tf-width="550" >RSVP</button>
-
-    
+import "../components/styles/SiteMain.scss"
 
 
-  </Layout>
+const IndexPage = () =>{
+
+const leftSide ='' ;
+return(
+  (
+    <Layout>
+      <Seo title="Ingrid and Charlie" />
+
+      <div className="SiteMain">
+
+        <OneColumn/>
+
+   
+      </div>
+
+
+
+
+
+    </Layout>
+  )
+
 )
+} 
 
 export default IndexPage
