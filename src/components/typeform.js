@@ -1,13 +1,19 @@
 import * as React from "react"
-import Banner from "./banner"
-// import './styles/OneColumn.scss'
+
 
 
 const TypeFrom = ({ children }) => {
 
   return (
-    <div className='TypeForm'>
-      <Banner />
+    <div id="siteform" className='TypeForm'>
+      <div data-tf-widget="UwkqWUIr"
+        style={{
+          width: `100%`,
+          height: `100vh`,
+          color: `#FFFFFF`,
+        }}
+      >
+      </div>
     </div>
   )
 

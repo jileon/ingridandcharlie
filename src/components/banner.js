@@ -22,7 +22,7 @@ const Banner = () => {
       <p className="Banner__date">Thursday, <br/>April 07, 2022</p>
       <p className="Banner__location">Pasadena,CA</p>
       
-      <button className="Banner__btn">RSVP</button>
+      <a className="Banner__btn" href="#siteform">RSVP</a>
     </div>
   )
 }
