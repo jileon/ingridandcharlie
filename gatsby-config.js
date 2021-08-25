@@ -6,8 +6,19 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-anchor-links`,
+    
+
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: 0
+      },
+    },
+    
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

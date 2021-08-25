@@ -9,7 +9,7 @@ const TypeFrom = ({ children }) => {
       <div data-tf-widget="UwkqWUIr"
         style={{
           width: `100%`,
-          height: `100vh`,
+          height: `90vh`,
           color: `#FFFFFF`,
         }}
       >
