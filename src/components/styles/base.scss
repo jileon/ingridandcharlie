@@ -1,0 +1,70 @@
+
+:root {
+ // scrollbar-color: $color-primary mix(white, $color-primary, 75%);
+  scrollbar-width: thin;
+}
+
+body {
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-scrollbar:vertical {
+    width: $root-scrollbar-width;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    height: $root-scrollbar-width;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: $root-scrollbar-width;
+ //   border: 2px solid mix(white, $color-primary, 75%); /* should match background, can't be transparent */
+    background-color: $color-primary;
+  }
+
+  &::-webkit-scrollbar-track {
+ //   background-color: mix(white, $color-primary, 75%);
+  }
+}
+
+html,
+body {
+  position: relative;
+}
+
+html {
+  height: 100%;
+  background-color: white;
+  color: $color-text;
+  font-size: 10px;
+
+  @media screen and (min-width: $screen-width-md) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: $screen-width-xl) {
+    font-size: 18px;
+  }
+}
+
+body {
+  background-color: $color-primary;
+  line-height: 1.4;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  // Nothing smaller than 16px by default
+  // *Prevents unintentional zooming on mobile devices*
+  font-size: 16px;
+  color: $color-text;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $font-family-body;
+  font-weight: $font-family-body-normal-weight;
+
+
+}
+

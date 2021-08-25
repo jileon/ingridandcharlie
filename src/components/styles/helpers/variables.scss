@@ -1,0 +1,72 @@
+// --------------------------
+// COLORS
+// --------------------------
+
+$color-black: #272727;
+$color-primary: #C4C4C4;
+$color-text: $color-black;
+
+//
+// --------------------------
+// SIZES
+// --------------------------
+//
+// HEADINGS SIZES
+$font-size-h1: 54px;
+$font-size-h2: 48px;
+$font-size-h3: 40px;
+$font-size-h4: 36px;
+$font-size-h5: 28px;
+$font-size-h6: 24px;
+//
+// FONT SIZES
+$font-size-body-lg: 24px;
+$font-size-body: 20px;
+$font-size-body-sm: 16px;
+//
+// FONT FAMILIES
+$font-family-body: 'Oswald','Roboto', sans-serif;
+$font-family-body-normal-weight: 400;
+
+
+// FORM & BUTTON SHARED HEIGHTS
+$input-and-button-height-xs: 32px;
+$input-and-button-height-sm: 44px;
+$input-and-button-height-default: 50px;
+$input-and-button-height-lg: 64px;
+//
+// GLOBAL WIDTHS
+$reading-width: 1024px;
+$root-scrollbar-width: 15px;
+//
+// Shortcut to select all the text style inputs
+$input-text-types: (
+  "input[type=date]",
+  "input[type=datetime]",
+  "input[type=email]",
+  "input[type=file]",
+  "input[type=image]",
+  "input[type=month]",
+  "input[type=number]",
+  "input[type=password]",
+  "input[type=range]",
+  "input[type=search]",
+  "input[type=tel]",
+  "input[type=text]",
+  "input[type=time]",
+  "input[type=url]",
+  "input[type=week]"
+);
+
+
+//
+// GRID SIZING
+$grid-gutter-width: 2rem;
+//
+// SCREEN WIDTHS
+$screen-width-xs: 576px;
+$screen-width-sm: 768px;
+$screen-width-md: 992px;
+$screen-width-lg: 1200px;
+$screen-width-xl: 1402px;
+
