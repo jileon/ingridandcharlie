@@ -3,15 +3,25 @@
   // background-color: #c4c4c4bf;
   height: 90%;
   width: 90%;
-  min-height: 560px;
+
   margin: 0 auto;
   position: relative;
-  top: 3rem;
+
 
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(312deg, #bf953f1a, #fcf6ba2e, #b3872861, #fbf5b7, #aa771c2e);
+
+
+
+  @media screen and (min-width: $screen-width-sm) {
+      top: 3rem;
+        min-height: 560px;
+           height: 70%;
+    width: 70%;
+  }
+
 
   @media screen and (min-width: $screen-width-md) {
     height: 70%;
@@ -34,29 +44,8 @@
     opacity: 0.75;
     box-shadow: 0 0 30px 1px #545454;
 
-    //     background-image: linear-gradient(
-    //   312deg,
-    //   #bf953f5c,
-    //   #fcf6ba,
-    //   #b3872861,
-    //   #fbf5b7,
-    //   #aa771c6e
-    // );
+
   }
 
-  //   &:after {
-  //       content: "";
-  //     display: block;
-  //     position: absolute;
-  //     width: 100%;
-  //     height: 100%;
-  //   //  background-image: url(/static/paper-texture-9f839f5e01570f643e1ef9ea29a55e2f.png);
-  //     background-repeat: no-repeat;
-  //     opacity: 0.35;
-  //     box-shadow: 0 0 30px 1px #545454;
-  //      background-image: url('../../images/annie-spratt-florals.png');
-
-  //     background-size: contain;
-
-  // }
+ 
 }
