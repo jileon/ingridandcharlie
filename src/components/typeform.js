@@ -1,19 +1,14 @@
 import * as React from "react"
-
+import { Widget } from '@typeform/embed-react'
 
 
 const TypeFrom = ({ children }) => {
 
   return (
     <div id="siteform" className='TypeForm'>
-      <div data-tf-widget="UwkqWUIr"
-        style={{
-          width: `100%`,
-          height: `90vh`,
-          color: `#FFFFFF`,
-        }}
-      >
-      </div>
+
+      <Widget id="UwkqWUIr" style={{ height: '90vh' }} className="my-form" />
+      
     </div>
   )
 

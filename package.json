@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@popperjs/core": "^2.9.3",
+    "@typeform/embed-react": "^1.0.7",
     "bootstrap": "^5.1.0",
     "gatsby": "^3.11.1",
     "gatsby-plugin-anchor-links": "^1.2.1",
