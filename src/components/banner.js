@@ -13,7 +13,7 @@ const Banner = () => {
         <StaticImage
           backgroundColor="transparent"
           fadeIn="false"
-          src="../images/namelogo3.svg"
+          src="../images/iclogobronze.png"
           quality={95}
           formats={["AUTO", "WEBP", "AVIF"]}
           alt="Ingrid and Charlie name logo"
