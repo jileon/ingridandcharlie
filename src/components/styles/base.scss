@@ -1,6 +1,5 @@
-
 :root {
- // scrollbar-color: $color-primary mix(white, $color-primary, 75%);
+  // scrollbar-color: $color-primary mix(white, $color-primary, 75%);
   scrollbar-width: thin;
 }
 
@@ -19,12 +18,12 @@ body {
 
   &::-webkit-scrollbar-thumb {
     border-radius: $root-scrollbar-width;
- //   border: 2px solid mix(white, $color-primary, 75%); /* should match background, can't be transparent */
+    //   border: 2px solid mix(white, $color-primary, 75%); /* should match background, can't be transparent */
     background-color: $color-primary;
   }
 
   &::-webkit-scrollbar-track {
- //   background-color: mix(white, $color-primary, 75%);
+    //   background-color: mix(white, $color-primary, 75%);
   }
 }
 
@@ -64,12 +63,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: $font-family-body;
   font-weight: $font-family-body-normal-weight;
-
-
 }
 
-main{
-width: 100vw;
-height: 100vh;
+main {
+  min-width: 100vw;
 }
-
