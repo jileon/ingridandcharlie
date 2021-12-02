@@ -9,29 +9,27 @@ import Seo from "../components/seo"
 import "../components/styles/SiteMain.scss"
 
 
-const IndexPage = () =>{
+const IndexPage = () => {
 
-const leftSide ='' ;
-return(
-  (
-  <>
-    <Layout>
-      <Seo title="Ingrid and Charlie" />
-      <div className="SiteMain">
-        <OneColumn/>
-      </div>
-    </Layout>
-    
-    <Layout>
+  const leftSide = '';
+  return (
+    (
+      <>
+        <Layout>
+          <Seo title="Ingrid and Charlie" />
+          <div className="SiteMain">
+            <OneColumn />
+          </div>
+        </Layout>
 
-        <TypeForm/>
+        <Layout>
+          <TypeForm />
+        </Layout>
 
-    </Layout>
-    
-    </>
+      </>
+    )
+
   )
-
-)
-} 
+}
 
 export default IndexPage

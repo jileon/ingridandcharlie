@@ -1,5 +1,6 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import "../components/styles/Banner.scss"
 
@@ -23,13 +24,18 @@ const Banner = () => {
       </div>
 
 
-      <p className="Banner__date">Thursday, <br/>April 07, 2022</p>
+      <p className="Banner__date">Thursday, <br />April 07, 2022</p>
       <p className="Banner__location">Pasadena,CA</p>
-      
-   
-      <AnchorLink className="Banner__btn" to="/#siteform" title="Site Form">
-        <span>RSVP</span>
-      </AnchorLink>
+
+      <div className="Banner__buttons">
+        <AnchorLink className="Banner__btn" to="/#siteform" title="Site Form">
+          <span>RSVP</span>
+        </AnchorLink>
+
+        <Link className="Banner__btn" to="/faq"> <span>FAQ</span></Link>
+      </div>
+
+
     </div>
   )
 }
