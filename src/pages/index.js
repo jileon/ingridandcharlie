@@ -7,7 +7,7 @@ import OneColumn from "../components/onecolumn"
 import TypeForm from "../components/typeform"
 import Seo from "../components/seo"
 import "../components/styles/SiteMain.scss"
-
+import Card from "../components/card"
 
 const IndexPage = () => {
 
@@ -17,6 +17,8 @@ const IndexPage = () => {
       <>
         <Layout>
           <Seo title="Ingrid and Charlie" />
+
+
           <div className="SiteMain">
             <OneColumn />
           </div>
@@ -25,6 +27,9 @@ const IndexPage = () => {
         <Layout>
           <TypeForm />
         </Layout>
+
+
+
 
       </>
     )

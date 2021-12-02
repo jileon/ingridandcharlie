@@ -10,8 +10,18 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-anchor-links`,
+    `gatsby-plugin-react-svg`,
     
-
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /images/,
+          include: /\.inline\.svg$/
+        
+        }
+      }
+    },
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {

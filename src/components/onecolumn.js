@@ -3,6 +3,7 @@ import Banner from "./banner"
 import './styles/OneColumn.scss'
 
 
+
 const OneColumn = ({ children }) => {
 
   return (
