@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
-  padding: 3rem;
+  padding: 3rem 1rem;
   height: 100%;
   width: 100%;
   border: 10px double #9d835b7d;
@@ -60,11 +60,19 @@
 
   &__logoContainer {
     padding: 2.5rem;
+
+    min-width: 50vw;
     max-width: 330px;
-    margin: 1rem auto;
     width: 100%;
+    margin: 1rem auto;
+   
     font-size: 6rem;
     font-family: "Neonderthaw", cursive;
+
+    @media screen and (min-width: $screen-width-md) {
+      min-width: 300px;
+
+    }
   }
 
   &__nav {
