@@ -10,6 +10,8 @@ const Banner = () => {
     <div className="Banner">
       <h1 className="Banner__header">Save the Date</h1>
       <div className="Banner__logoContainer">
+
+        {/* Ingrid &amp; Charlie */}
         <StaticImage
           backgroundColor="transparent"
           fadeIn="false"
@@ -23,13 +25,28 @@ const Banner = () => {
       </div>
 
 
-      <p className="Banner__date">Thursday, <br/>April 07, 2022</p>
+      <p className="Banner__date">Thursday, April 07, 2022</p>
       <p className="Banner__location">Pasadena,CA</p>
       
-   
-      <AnchorLink className="Banner__btn" to="/#siteform" title="Site Form">
+      <div class="Banner__nav"> 
+      <AnchorLink className="Banner__btnText" to="/#siteform" title="Site Form">
         <span>RSVP</span>
       </AnchorLink>
+      <AnchorLink className="Banner__btnText" to="/#travel" title="travel">
+        <span>Travel</span>
+      </AnchorLink>
+     
+
+
+      <AnchorLink className="Banner__btnText" to="/#covid" title="Covid">
+        <span>Covid-19 Info</span>
+      </AnchorLink>
+      <AnchorLink className="Banner__btnText" to="/#registry" title="registry">
+        <span>Gift Registry</span>
+      </AnchorLink>
+      </div>
+   
+
     </div>
   )
 }

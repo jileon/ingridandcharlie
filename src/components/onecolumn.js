@@ -3,11 +3,11 @@ import Banner from "./banner"
 import './styles/OneColumn.scss'
 
 
-const OneColumn = ({ children }) => {
+const OneColumn = ({ children, bgcolor }) => {
 
   return (
-    <div className='OneColumn'>
-      <Banner />
+    <div className={`OneColumn OneColumn--${bgcolor}`}>
+      {children}
     </div>
   )
 
