@@ -106,7 +106,7 @@ const IndexPage = () => {
                 <h2 className="OneColumn__heading2">Registry</h2>
                 <p>
 
-                  Should you wish to honor us with a gift, we've created a convenient registry at Amazon.The list can be viewed by clicking the link below </p>
+                  Should you wish to honor us with a gift, we've created a convenient registry at Amazon.The list can be viewed by clicking the link below. </p>
 
 
 

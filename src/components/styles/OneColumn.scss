@@ -35,17 +35,25 @@
   &__heading2 {
     color: #272727;
     font-family: $font-family-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 5px;
     font-weight: 500;
     margin-bottom: 2rem;
+
+    @media screen and (min-width: $screen-width-md) {
+      font-size: 3rem;      
+    }
   }
   &__heading3 {
     color: #272727;
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 5px;
     font-weight: 500;
     margin-bottom: 1.5rem;
+
+    @media screen and (min-width: $screen-width-md) {
+      font-size: 3rem;      
+    }
   }
 
   &__infoText {
