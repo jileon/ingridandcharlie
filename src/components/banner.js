@@ -16,8 +16,6 @@ const Banner = () => {
           backgroundColor="transparent"
           fadeIn="false"
           src="../images/iclogobronze.png"
-          quality={95}
-          formats={["AUTO", "WEBP", "AVIF"]}
           alt="Ingrid and Charlie name logo"
           style={{ width: `100%` }}
         />
