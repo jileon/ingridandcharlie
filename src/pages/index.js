@@ -72,17 +72,7 @@ const IndexPage = () => {
                 <p>
                   Please complete the following form and submit proof of vaccination no less than 7 days prior to the event. A negative test must be submitted within 72 hours of the event date.
                 </p>
-                <p>
-                  *Fully vaccinated as ascribed by the CDC meaning: an individual is two weeks past the Johnson & Johnson dose, or two weeks past the second dose of either the Pfizer or Moderna vaccine.
-                  *For the testing option: a COVID-19 test must be completed by a healthcare provider – either a PCR or an antigen test (an at-home test is not accepted). Proof of a negative result must be submitted no more than 72 hours prior to the event date.
-                </p>
-                <p>
-                  For any questions, please contact the Events Office at 626-793-0359 or at info@castlegreen.com.
-                </p>
 
-                <p>
-                  We appreciate your cooperation in creating and maintaining a safe environment for our couples, their guests, and all staff. Thank you!
-                </p>
 
 
 
